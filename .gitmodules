@@ -1,0 +1,3 @@
+[submodule "Vendor/glancesdkdemos-ios"]
+	path = Vendor/glancesdkdemos-ios
+	url = https://gitlab.com/glance-networks/glancesdkdemos-ios.git
