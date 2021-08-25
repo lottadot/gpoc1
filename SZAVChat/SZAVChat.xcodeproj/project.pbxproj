@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34FBC45126D55873009E9A99 /* SZAVChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FBC44726D55872009E9A99 /* SZAVChat.framework */; };
+		34FBC45626D55873009E9A99 /* SZAVChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC45526D55873009E9A99 /* SZAVChatTests.swift */; };
+		34FBC45826D55873009E9A99 /* SZAVChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FBC44A26D55872009E9A99 /* SZAVChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34FBC46426D558D6009E9A99 /* Glance_iOSVideo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FBC46226D558D6009E9A99 /* Glance_iOSVideo.xcframework */; };
+		34FBC46526D558D6009E9A99 /* TwilioVoice.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FBC46326D558D6009E9A99 /* TwilioVoice.xcframework */; };
+		34FBC46726D558ED009E9A99 /* ChatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC46626D558ED009E9A99 /* ChatProvider.swift */; };
+		34FBC46A26D55E93009E9A99 /* Glance_iOSVideo.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34FBC46226D558D6009E9A99 /* Glance_iOSVideo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34FBC46B26D55E93009E9A99 /* TwilioVoice.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34FBC46326D558D6009E9A99 /* TwilioVoice.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34FBC45226D55873009E9A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34FBC43E26D55872009E9A99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34FBC44626D55872009E9A99;
+			remoteInfo = SZAVChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34FBC46926D55E89009E9A99 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34FBC46A26D55E93009E9A99 /* Glance_iOSVideo.xcframework in CopyFiles */,
+				34FBC46B26D55E93009E9A99 /* TwilioVoice.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		34FBC44726D55872009E9A99 /* SZAVChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZAVChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FBC44A26D55872009E9A99 /* SZAVChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZAVChat.h; sourceTree = "<group>"; };
+		34FBC44B26D55872009E9A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FBC45026D55873009E9A99 /* SZAVChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZAVChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FBC45526D55873009E9A99 /* SZAVChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZAVChatTests.swift; sourceTree = "<group>"; };
+		34FBC45726D55873009E9A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FBC46226D558D6009E9A99 /* Glance_iOSVideo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Glance_iOSVideo.xcframework; path = "../Vendor/glancesdkdemos-ios/Frameworks/Glance_iOSVideo.xcframework"; sourceTree = "<group>"; };
+		34FBC46326D558D6009E9A99 /* TwilioVoice.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TwilioVoice.xcframework; path = "../Vendor/glancesdkdemos-ios/Frameworks/TwilioVoice.xcframework"; sourceTree = "<group>"; };
+		34FBC46626D558ED009E9A99 /* ChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatProvider.swift; sourceTree = "<group>"; };
+		34FBC46826D559F3009E9A99 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = build.sh; path = ../build.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34FBC44426D55872009E9A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FBC46526D558D6009E9A99 /* TwilioVoice.xcframework in Frameworks */,
+				34FBC46426D558D6009E9A99 /* Glance_iOSVideo.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FBC44D26D55873009E9A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FBC45126D55873009E9A99 /* SZAVChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34FBC43D26D55872009E9A99 = {
+			isa = PBXGroup;
+			children = (
+				34FBC46826D559F3009E9A99 /* build.sh */,
+				34FBC44926D55872009E9A99 /* SZAVChat */,
+				34FBC45426D55873009E9A99 /* SZAVChatTests */,
+				34FBC46126D558C2009E9A99 /* Frameworks */,
+				34FBC44826D55872009E9A99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34FBC44826D55872009E9A99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC44726D55872009E9A99 /* SZAVChat.framework */,
+				34FBC45026D55873009E9A99 /* SZAVChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FBC44926D55872009E9A99 /* SZAVChat */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC44A26D55872009E9A99 /* SZAVChat.h */,
+				34FBC44B26D55872009E9A99 /* Info.plist */,
+				34FBC46626D558ED009E9A99 /* ChatProvider.swift */,
+			);
+			path = SZAVChat;
+			sourceTree = "<group>";
+		};
+		34FBC45426D55873009E9A99 /* SZAVChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC45526D55873009E9A99 /* SZAVChatTests.swift */,
+				34FBC45726D55873009E9A99 /* Info.plist */,
+			);
+			path = SZAVChatTests;
+			sourceTree = "<group>";
+		};
+		34FBC46126D558C2009E9A99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC46226D558D6009E9A99 /* Glance_iOSVideo.xcframework */,
+				34FBC46326D558D6009E9A99 /* TwilioVoice.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34FBC44226D55872009E9A99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FBC45826D55873009E9A99 /* SZAVChat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34FBC44626D55872009E9A99 /* SZAVChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FBC45B26D55873009E9A99 /* Build configuration list for PBXNativeTarget "SZAVChat" */;
+			buildPhases = (
+				34FBC44226D55872009E9A99 /* Headers */,
+				34FBC44326D55872009E9A99 /* Sources */,
+				34FBC44426D55872009E9A99 /* Frameworks */,
+				34FBC44526D55872009E9A99 /* Resources */,
+				34FBC46926D55E89009E9A99 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SZAVChat;
+			productName = SZAVChat;
+			productReference = 34FBC44726D55872009E9A99 /* SZAVChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		34FBC44F26D55873009E9A99 /* SZAVChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FBC45E26D55873009E9A99 /* Build configuration list for PBXNativeTarget "SZAVChatTests" */;
+			buildPhases = (
+				34FBC44C26D55873009E9A99 /* Sources */,
+				34FBC44D26D55873009E9A99 /* Frameworks */,
+				34FBC44E26D55873009E9A99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34FBC45326D55873009E9A99 /* PBXTargetDependency */,
+			);
+			name = SZAVChatTests;
+			productName = SZAVChatTests;
+			productReference = 34FBC45026D55873009E9A99 /* SZAVChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34FBC43E26D55872009E9A99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					34FBC44626D55872009E9A99 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					34FBC44F26D55873009E9A99 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 34FBC44126D55872009E9A99 /* Build configuration list for PBXProject "SZAVChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34FBC43D26D55872009E9A99;
+			productRefGroup = 34FBC44826D55872009E9A99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34FBC44626D55872009E9A99 /* SZAVChat */,
+				34FBC44F26D55873009E9A99 /* SZAVChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34FBC44526D55872009E9A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FBC44E26D55873009E9A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34FBC44326D55872009E9A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FBC46726D558ED009E9A99 /* ChatProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FBC44C26D55873009E9A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FBC45626D55873009E9A99 /* SZAVChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34FBC45326D55873009E9A99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34FBC44626D55872009E9A99 /* SZAVChat */;
+			targetProxy = 34FBC45226D55873009E9A99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34FBC45926D55873009E9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34FBC45A26D55873009E9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34FBC45C26D55873009E9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3QV7ZA67HV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SZAVChat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lottadot.SZAVChat;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34FBC45D26D55873009E9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3QV7ZA67HV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SZAVChat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lottadot.SZAVChat;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34FBC45F26D55873009E9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QV7ZA67HV;
+				INFOPLIST_FILE = SZAVChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lottadot.SZAVChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34FBC46026D55873009E9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QV7ZA67HV;
+				INFOPLIST_FILE = SZAVChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lottadot.SZAVChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34FBC44126D55872009E9A99 /* Build configuration list for PBXProject "SZAVChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FBC45926D55873009E9A99 /* Debug */,
+				34FBC45A26D55873009E9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FBC45B26D55873009E9A99 /* Build configuration list for PBXNativeTarget "SZAVChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FBC45C26D55873009E9A99 /* Debug */,
+				34FBC45D26D55873009E9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FBC45E26D55873009E9A99 /* Build configuration list for PBXNativeTarget "SZAVChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FBC45F26D55873009E9A99 /* Debug */,
+				34FBC46026D55873009E9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34FBC43E26D55872009E9A99 /* Project object */;
+}
